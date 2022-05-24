@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulating Tuberculosis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="tb.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Simulating_Tuberculosis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="picwithtext">
+                <div class="cropcough"><img src="cough1.jpg" style="width:100%;"></div>
+                <div class="centered divbground"><div class="centered"><h1 class="display-4">Simulating tuberculosis</h1><p>Made by Marc Fajardo 2022</p></div></div>
+            </div>
+            <br />
+            <div class="main">
+                <h2>The Nature of Tuberculosis</h2>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Understanding TB
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                          <div class="accordion-body">
+                            <strong>Dr. Robert Koch </strong> announced the existence of Mycobacterium tuberculosis, the bacteria that causes tuberculosis, back on March 24, 1882. TB was such a dangerous illness that it killed <span class="text-warning">1 out of 7 </span> individuals in America and Europe.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            The Stats
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                          <div class="accordion-body">
+                            <strong>TB was the third leading cost of death </strong> in 2020 and the second leading infectious killer after COVID-19, with <span class="text-warning"> 1.5 million deaths </span> in 2020.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Transmission
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Tuberculosis is a disease that can spread from person to person through the air. When a person with TB <span class="text-warning">coughs, speaks, sneezes, sings or breathes </span>. The germs from the infected individual <span class="text-primary">can stay in the air for several hours</span>. 
+                        </div>
+                        </div>
+                      </div>
+            
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            Vulnerabilities
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <span class="text-danger">Individuals with HIV are much more vulnerable to tuberculosis </span>. Young people and individuals with malnutrition are known to be vulnerable as well. Other factors that also affect the relationship of TB to the person are <span class="text-warning"> diabetes, indoor air pollution, alcohol, tobacco smoke, and immunosuppressive drugs</span>. Healthcare workers and the indigenous population have increased vulnerabilities as well. <span class="text-primary">The delay between the diagnosis of TB and the duration of transmission </span> by the infected person also has a substantial effect.
+                        </div>
+                        </div>
+                      </div>
+            
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                            Latent TB Infection and TB Disease
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Getting infected with TB doesn't automatically mean that you will automatically experience symptoms and start infecting other people. TB can lay <span class="text-primary">dormant and may develop or activate later on </span>. This means that it is also important to be able to detect individuals with Latent TB infection for prevention.
+                         </div>
+                        </div>
+                      </div>
+            
+                      <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                            Detecting TB
+                          </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Detecting TB is paramount to <span class="text-success">start the proper medication </span> for an infected individual or a person who has symptoms or to <span class="text-primary">start tracing individuals</span> who were in contact with the person.
+                        </div>
+                        </div>
+                      </div>
+            
+                       <div class="accordion-item border-primary">
+                        <h2 class="accordion-header" id="headingEyt">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEyt" aria-expanded="false" aria-controls="collapseThree">
+                            Control Measures against TB
+                          </button>
+                        </h2>
+                        <div id="collapseEyt" class="accordion-collapse collapse" aria-labelledby="headingEyt" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h4>Vaccination</h4>
+                            <strong>The Bacille Calmette-Guérin (BCG) vaccine was developed in 1921 by Albert Calmette and Jean-Marie Camille Guerin.</strong> The use of the vaccine, however, is only recommended for children and health care workers in countries where TB is much more common. Individuals with <span class="text-warning">HIV or who are pregnant </span> are also not recommended to have the vaccine. This is because there are potential problems that the vaccine can cause without proper consultation with an expert. <span class="text-primary">Low risk of infection with the bacteria on the vaccination, variable effectiveness of the vaccine on pulmonary TB, and potential interference of skin tests for TB</span>. This is why the vaccine is only recommended to certain demographics who are qualified to need it and potentially have better pros with the vaccine.
+                            <br /><br />
+                            <h4>Medication/Treatment</h4>
+                            Today, there are four drugs used to treat TB disease, namely: <span class="text-success">isoniazid (1951), pyrazinamide (1952), ethambutol (1961), and rifampin (1966)</span>. 
+                            This 4-drug cocktail is still the widely used treatment for drug-susceptible TB.
+            
+                            <p>Medication should be taken for around <span class="text-primary">6-12 months</span> depending on the professional. The schedule for taking the treatment should always be followed to avoid the cases of being sick again, or worse, <span class="text-warning">the bacteria become drug-resistant to those medications</span>. Drug-resistant TB would then need harsher or more toxic treatments to remove it.</div>
+                            </p>
+                            </div>
+                      </div>
+                    </div>
+                <br /> 
+                <h2>Setup of the Simulation and Properties of the Disease</h2>
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 80rem;">
+                      <div class="card-header">Simulation Properties</div>
+                      <div class="card-body">
+                        <h4>Ticks</h4>
+                            <p>Each tick in the simulation is equivalent to 1 hour, 24 ticks for a day, 24*30 for a month.</p>
+                        <h4 class="card-title">Agents</h4>
+                            <ul>
+                            <li><p class="card-text">There are 10-350 agents that the user can create, each moving randomly in the field</p></li>
+                            <li><p class="card-text">Starting infected with active tb is calculated by: Selected number of population * (%starting-infected / 100)</p></li>
+                            <li><p class="card-text"></p>Agents have the states: sick?, dormant?, dead?, isolate?, diagnosed?, takemeds?, and sick-tb-resist?
+                                <ul>
+                                    <li>not sick? not dormant? are healthy (green)</li>
+                                    <li>sick?:(red) The agent has active tuberculosis, has %cough (chance to cough, which changes the current patch to yellow and may infect other not sick? and not dormant? agents) per tick</li>
+                                    <li>dormant?:(yellow) The agent has latent tuberculosis. (infected by the cough patches from sick?) dormant? agents have 'dormant-to-active' slider in months for the dormant tb to become active, dormant? cannot infect other agents</li>
+                                    <li>dead?: The agent died due to being sick?</li>
+                                    <li>isolate?: These individuals are hidden from the world and are isolating, only sick? agents can isolate and therefore cannot infect other agents.</li>
+                                    <li>diagnoesd?: sick? and dormant? can be diagnosed to tb, once successfully diagnosed, agents can now start medication to recover</li>
+                                    <li>takemeds?: once started to take medication, agents have a chance to stop taking meds depending on %willingness-to-continue-medication</li>
+                                    <li>sick-tb-resist?: on skipping meds, tb has a chance to be resistant to medication, dooming the sick? or dormant?, this simulation does not spread drug-resistant tb</li>
+                                </ul></li>
+                            </ul>  
+                        <h4>Coughs</h4>
+                            <ul>
+                                <li>Coughs come from agents who are sick? and have %cough chance to cough per tick/hour.</li>
+                                <li>Agents being on the patch with cough (yellow patch) have %infectiousness to get dormant? status</li>
+                                <li>Cough duration in patch depends on air-contamination-duration, after which the yellow patch becomes black again</li>
+                                <li>sick? agents have %death chance to die unless taking medication</li>
+                            </ul>
+                        <h4>Time while dormant? or under meds</h4>
+                            <ul>
+                                <li>Once dormant, agents have dormant-to-active number of months until the agent becomes sick?, unless diagnosed and then given medication</li>
+                                <li>Active TB with medication depends on active-to-healthy-with-medication, dormant TB with medication depends on dormant-to-healthy-medication</li>
+                            </ul>
+                        <h4>Willingness to get tested</h4>
+                            <ul>
+                                <li>sick? agents have %willingness-active-tb chance to get tested for tb</li>
+                                <li>normal or dormant? agents have %willingness-no-symptoms chance to get tested for tb</li>
+                                <li>when undergoing testing, agents have a chance to be successfully diagnosed based on %ability-to-detect-tb, otherwise they remain undetected</li>
+                                <li>Testing frequency depends on the number of days on days-interval-for-testing-tb</li>
+                            </ul>
+                        <h4>Willingess to continue taking medicine</h4>
+                            <ul>
+                                <li>Agents, once diagnosed, takes meds continuously until recovery depending on %willingness-to-continue-medication, agents cannot die if continuously taking meds</li>
+                                <li>Once stopping medication, sick? agents have a chance to die, also chance of developing sick-tb-resist? depends on %chance-resistant-to-meds-on-skip</li>
+                                <li>Agents after recovery time with medication, become healthy</li>
+                            </ul>
+                        <h4>Willingness to isolate</h4>
+                            <ul>
+                                <li>Once diagnosed?, agents have a chance to isolate and not be on the worldmap depending on %willingness-to-isolate, only sick? agents are isolated since dormant? cannot infect</li>
+                            </ul>
+                        <h4>Immune System</h4>
+                            <ul>
+                                <li>Agents that have latent tb 'dormant?', when not diagnosed? or not takemeds?, may eventually become sick after dormant-to-active, %immune-system-fighting-latent-tb chance is the ability to fight off dormant? tb, instead of becoming sick?, agent becomes healthy</li>
+                            </ul>
+                        <h4>Recognizing deaths in the population</h4>
+                            <ul>
+                                <li>%effect-of-deaths-to-willingness affects overall willingness of agents depending on the percentage of death in the population</li>
+                                <li>Formula: willingness-due-to-deaths is added to all willingness chances in the code (willingness-due-to-deaths = dead / population * %effect-of-deaths-to-willingness)</li>
+                            </ul>
+                        </div>
+                    </div>
+                <br />
+                <div class="card bg-light mb-3" style="max-width: 100rem;">
+                    <div class="card-header">The Simulation</div>
+                    <div class="card-body">
+                        <iframe src="tuberculosis.html" title="description" style="width:100%; height:1200px">
+                        </iframe>
+                    </div>
+                  </div>
+                
+                <h2>Discussion</h2>
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 80rem;">
+                        <div class="card-header">Simulation Events</div>
+                        <div class="card-body">
+                            <h4>Standard Simulation</h4>
+                                <ul>
+                                    <li>Standard simulation only involves %cough, %infectiousness, %death, air-contamination-duration, and dormant-to-active </li>
+                                    <li>All latent tb infected will always become sick, sick individuals will always die and potentially infect others. Many will survive depending on variables presented above. As sick? agents may die without infecting other agents</li>
+                                </ul>
+                            <h4>With active tb testing and medication</h4>
+                                <ul>
+                                    <li>Includes: %willingness-active-tb, active-to-healthy-with-medication, %ability-to-detect-tb, %willingness-to-continue-medication</li>
+                                    <li>Even with good values in all new included variables, simulation found it difficult to sustain the society. Sick people become healthy for sure, but almost always becomes latent cases, bringing in more sick agents, no isolation means sick agents that are diagnosed can still infect healthy agents.</li>
+                                </ul>
+                            <h4>With no symptoms testing and medication (expensive amount of tests)</h4>
+                                <ul>
+                                    <li>Includes: %willingness-no-symptoms, </li>
+                                    <li>Successful simulations with good %willingness-no-symptoms, assuming they continue medication to recover, it is very expensive however, testing many times</li>
+                                </ul>
+                            <h4>Testing success chances and frequency</h4>
+                                <ul>
+                                    <li>Includes:days-interval-for-testing-tb</li>
+                                    <li>By default, testing chances happen every 24ticks/1day, can change this until 31 days, on an ideal world, the more tests the better. The expenses and logistics are realistically a nightmare however.</li>
+                                </ul>
+                            <h4>With chances of drug-resistant-tb</h4>
+                                <ul>
+                                    <li>Includes: %chance-resistant-to-meds-on-skip</li>
+                                    <li>Once the bacteria develops resistance, sick? agents will infect and die, so the %chance is very sensitive</li>
+                                </ul>
+                            <h4>With willingness to isolate</h4>
+                                <ul>
+                                    <li>Includes:%willingness-to-isolate</li>
+                                    <li>Even when there is only a small chance of isolation, there are many healthy agents that are saved in comparison to it not existing.</li>
+                                    <li>When in isolation, they still have a chance to die based on medication, but will no longer infect other people</li>
+                                </ul>
+                            <h4>With immune-system calculation (for dormant tb)</h4>
+                                <ul>
+                                    <li>Includes: %immune-system-fighting-latent-tb</li>
+                                    <li>This gives better chances to survive tb, immune systems when strong have a chance to not develop into active tb</li>
+                                    <li>Even without medication implemented, some latent tb or dormant? state agent becomes healthy</li>
+                                    <li>The stronger the immune system, the likelihood of becoming sick? becomes less, the likelihood of becoming healthy becomes more, even without meds and diagnosis</li>
+                                </ul>
+                            <h4>Recognizing deaths</h4>
+                                <ul>
+                                    <li>Includes:%effect-of-deaths-to-willingness</li>
+                                    <li>Being affected or feeling the urgency depending on the amount of deaths witnessed in the population is grounded to reality</li>
+                                    <li>The slider however can become sensitive as even slight adjustments can increase isolation, medication, and testing. Which improve overall turnouts in the simulation</li>
+                                </ul>
+                        </div>
+                    </div>
+                <br />
+                <h2>Key Insights</h2>
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 80rem;">
+                        <div class="card-header">Insights</div>
+                        <div class="card-body">
+                            <h4>Chances of dying per hour</h4>
+                                <ul>
+                                    <li>Even with small chances of death, rolling the dice per hour increases the likelihood. Therefore a different calculation for %death may be needed</li>
+                                </ul>
+                            <h4>Willingness calculations</h4>
+                                <ul>
+                                    <li>Willingness odds are very important in understanding agent decisions. Realistically, only agents with symptoms will have bigger chances of wanting to get tested.</li>
+                                </ul>
+                            <h4>Continuing medication chances</h4>
+                                <ul>
+                                    <li>With drug-resistant tb being dangerous in this simulation, continuing medication chances are very crucial. Even around 90% is already dangerous, as one skip can cause resistance based on the other chances</li>
+                                    <li>This is very important as it is being tested the whole duration of the assigned recovery time</li>
+                                </ul>
+                            <h4>Not dying while on meds</h4>
+                                <ul>
+                                    <li>Realistically, there should be different chances of death even under medication or isolation. This simulation makes it so that when using the medication continously, the agent will not die.</li>
+                                </ul>
+                            <h4>Not spreading drug-resistant tb, or not having harmful medication to agents with drug-resistant tb</h4>
+                                <ul>
+                                    <li>Realistically, once you develop drug-resistant tb, other agents infected by you should also get drug-resistant tb, this is not however the case for the simulation.</li>
+                                </ul>
+                            <h4>Immune System, depending on agent statuses, (with hiv, smoker, alcoholic, diabetes, others)</h4>
+                                <ul>
+                                    <li>Varying immune system levels in the society should make the simulation better, having uniform immune system may not be accurate and will not reflect or instantiate situations where agents also have other complications aside from tb.</li>
+                                </ul>
+                            <h4>Recognizing death, better formula, or choice to only apply to certain willingness chances</h4>
+                                <ul>
+                                    <li>There should be a better calculation for recognizing death which translates into willingness to isolate, medicate, and get tested</li>
+                                    <li>Willingness effect should also be adjustable by the user as to what types of willingness it will touch.</li>
+                                </ul>
+                        </div>
+                    </div>
+                <h2>References</h2>
+                    <ul style="font-style:italic">
+                    <li>de Espíndola, A. L., Bauch, C. T., Troca Cabella, B. C., & Martinez, A. S. (2011). An agent-based computational model of the spread of tuberculosis. Journal of Statistical Mechanics: Theory and Experiment, 2011(05), P05003. https://doi.org/10.1088/1742-5468/2011/05/p05003
+                    </li>
+                    <li>Narasimhan, P., Wood, J., MacIntyre, C. R., & Mathai, D. (2013). Risk Factors for Tuberculosis. Pulmonary Medicine, 2013, 1–11. https://doi.org/10.1155/2013/828939
+                    </li>
+                    <li>NHS website. (2022, March 2). Treatment. Nhs.Uk. https://www.nhs.uk/conditions/tuberculosis-tb/treatment/
+                    </li><li>Prats, C., Montañola-Sales, C., Gilabert-Navarro, J. F., Valls, J., Casanovas-Garcia, J., Vilaplana, C., Cardona, P. J., & López, D. (2016). Individual-Based Modeling of Tuberculosis in a User-Friendly Interface: Understanding the Epidemiological Role of Population Heterogeneity in a City. Frontiers in Microbiology, 6. https://doi.org/10.3389/fmicb.2015.01564
+                    </li><li>Tuberculosis (TB) - Latent TB Infection and TB Disease. (2020, December 11). Centers for Disease Control and Prevention. https://www.cdc.gov/tb/topic/basics/tbinfectiondisease.htm
+                    </li><li>Turner, R. D., & Bothamley, G. H. (2014). Cough and the Transmission of Tuberculosis. The Journal of Infectious Diseases, 211(9), 1367–1372. https://doi.org/10.1093/infdis/jiu625
+                    </li><li>World TB Day History. (2022, January 14). Centers for Disease Control and Prevention. https://www.cdc.gov/tb/worldtbday/history.htm#:%7E:text=The%20earliest%20written%20mentions%20of,occurred%20in%20the%20United%20States.
+                    </li></ul>
+            
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Simulating_Tuberculosis - Marc Fajardo - marcfajardo14@gmail.com
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
